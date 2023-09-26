@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+@font-face {
+    font-family: 'Helvetica-Bold';
+    src: url("../fonts/helvetica-255-cufonfonts/Helvetica-Bold.ttf");
+}
+@font-face {
+    font-family: 'helvetica-compressed';
+    src: url("../fonts/helvetica-compressed-5871d4b6903a");
+}
+
+@font-face {
+    font-family: 'helvetica-light';
+    src: url("../fonts/helvetica-light-587ebe5a59211.ttf");
+}
+@font-face {
+    font-family: 'helvetica-rounded-bold';
+    src: url("../helvetica-rounded-bold-5871d05ead8de.otf");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box !important;
+    text-decoration: none !important;
+    list-style: none !important;
+}
+
+:root {
+    /* font-size */
+    --fs-xsm: 11px;
+    --fs-sm: 12px;
+    --fs-md: 15px;
+    --fs-lg: 16px;
+    --fs-xl: 17px;
+    --fs-xxl: 18px;
+    --fs-2xl: 19px;
+    --fs-3xl: 20px;
+    --fs-4xl: 21px;
+    --fs-5xl: 32px;
+    --fs-6xl: 36px;
+    --fs-7xl: 37px;
+    --fs-8xl: 39px;
+    --fs-9xl: 40px;
+    --fs-10xl: 70px;
+    --fs-11xl: 94px;
+    --fs-12xl: 101px;
+
+    /* font-family */
+    --ff-roboto: 'roboto', sans-serif;
+
+    /* colors */
+    --bs-black: #0000;
+    --bs-white: #fff;
+    --col-grey: #848895;
+    --col-blue: #618adc;
+    --col-offwhite: #c4c4c4;
+}
+
+.ff-roboto {
+    font-family: var(--ff-roboto);
+}
+
+.bs-white {
+    color: var(--bs-white);
+}
+
+.bs-black {
+    color: var(--bs-black);
+}
+
+.col-grey {
+    color: var(--col-grey);
+}
+
+.col-blue {
+    color: var(--col-blue);
+}
+
+.col-offwhite {
+    color: var(--col-offwhite);
+}
+
+.fs-11 {
+    font-size: var(--fs-xsm);
+}
+
+.fs-12 {
+    font-size: var(--fs-sm);
+}
+
+.fs-15 {
+    font-size: var(--fs-md);
+}
+
+.fs-16 {
+    font-size: var(--fs-lg);
+}
+
+.fs-17 {
+    font-size: var(--fs-xl);
+}
+
+.fs-18 {
+    font-size: var(--fs-xxl);
+}
+
+.fs-19 {
+    font-size: var(--fs-2xl);
+}
+
+.fs-20 {
+    font-size: var(--fs-3xl);
+}
+
+.fs-21 {
+    font-size: var(--fs-4xl);
+}
+
+.fs-32 {
+    font-size: var(--fs-5xl);
+}
+
+.fs-36 {
+    font-size: var(--fs-6xl);
+}
+
+.fs-37 {
+    font-size: var(--fs-7xl);
+}
+
+.fs-39 {
+    font-size: var(--fs-8xl);
+}
+
+.fs-40 {
+    font-size: var(--fs-9xl);
+}
+
+.fs-70 {
+    font-size: var(--fs-10xl);
+}
+
+.fs-94 {
+    font-size: var(--fs-11xl);
+}
+
+.fs-101 {
+    font-size: var(--fs-12xl);
+}
+
+.lh-160 {
+    line-height: 160.588%;
+}
+
+.lh-108 {
+    line-height: 108%;
+}
+
+.lh-130 {
+    line-height: 130%;
+}
+
+.lh-133 {
+    line-height: 133.333%;
+}
+
+.lh-112 {
+    line-height: 112%;
+}
+
+.lh-121 {
+    line-height: 121.579%;
+}
+
+.lh-130 {
+    line-height: 130.693%;
+}
+
+.lh-170 {
+    line-height: 170.625%;
+}
+
+.lh-115 {
+    line-height: 115%;
+}
+
+.lh-118 {
+    line-height: 118%;
+}
+
+.lh-105 {
+    line-height: 105%;
+}
+
+.lh-151 {
+    line-height: 151.667%;
+}
+
+.lh-248 {
+    line-height: 248.182%;
+}
+
+.lh-110 {
+    line-height: 110.526%;
+}
+
+.lh-102 {
+    line-height: 102.128%;
+}
+
+
+/* .box {
+    font-family: 'Helvetica-Bold';
+    font-weight: 800;
+} */
