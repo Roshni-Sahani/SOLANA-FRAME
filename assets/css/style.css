@@ -1,18 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
 
 @font-face {
-    font-family: 'Helvetica-Bold';
+    font-family: 'helvetica-Bold';
     src: url("../fonts/helvetica-255-cufonfonts/Helvetica-Bold.ttf");
 }
+
 @font-face {
     font-family: 'helvetica-compressed';
     src: url("../fonts/helvetica-compressed-5871d4b6903a");
 }
 
 @font-face {
-    font-family: 'helvetica-light';
-    src: url("../fonts/helvetica-light-587ebe5a59211.ttf");
+    font-family: 'helvetica-normal';
+    src: url("../fonts/helvetica-255-cufonfonts/Helvetica.ttf");
 }
+
 @font-face {
     font-family: 'helvetica-rounded-bold';
     src: url("../helvetica-rounded-bold-5871d05ead8de.otf");
@@ -24,6 +26,168 @@
     box-sizing: border-box !important;
     text-decoration: none !important;
     list-style: none !important;
+    /* outline: red 2px solid; */
+}
+
+.mw-390 {
+    max-width: 390px;
+}
+
+.build-btn {
+    border-radius: 24px;
+    border: 1px solid #000;
+    background: #14F195;
+    padding: 12px 21px;
+}
+
+.stack-btn {
+    border-radius: 24px;
+    border: 1px solid #FFF;
+    background: #000;
+    padding: 12px 21px;
+}
+
+.ellipse {
+    width: 633.226px;
+    height: 642px;
+    flex-shrink: 0;
+    border-radius: 100px;
+    background: rgba(240, 135, 255, 0.30);
+    filter: blur(250px);
+}
+
+.bg-img {
+    background-image: url(../images/png/bg-img.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+.pos-abs {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.pb-39 {
+    padding-bottom: 39px;
+}
+
+.pl-69 {
+    padding-left: 69px;
+}
+
+.py-83 {
+    padding-top: 83px;
+    padding-bottom: 83px;
+}
+
+.chp-btn {
+    border-radius: 16px;
+    background: #9945FF;
+    padding: 2px 11px;
+}
+
+.mw-387 {
+    max-width: 387px;
+}
+
+.min-height {
+    min-height: 370px;
+}
+
+.mb-29 {
+    margin-bottom: 29px;
+}
+
+.mw-200 {
+    max-width: 200px;
+}
+
+.mw-159 {
+    max-width: 159px;
+}
+
+.pb-52 {
+    padding-bottom: 52px;
+}
+
+.bg-color {
+    background-color: #18151b;
+}
+
+.common-btn {
+    border-radius: 16px;
+    background: #9945FF;
+    padding: 2px 11px;
+}
+
+.pos-abs1 {
+    position: absolute;
+    top: 73%;
+    left: 8%;
+    right: 4%;
+
+}
+
+.mw-190 {
+    max-width: 190px;
+}
+
+.mw-182 {
+    max-width: 182px;
+}
+
+.cards {
+    border-radius: 12px;
+    background: #19161C;
+    padding: 30px 30px;
+    height: 100%;
+}
+
+.letter-spacing {
+    letter-spacing: 0.6px;
+}
+
+.primary-btn {
+    border-radius: 30px;
+    border: 1px solid #FFF;
+    padding: 14px 21px;
+}
+
+.mw-393 {
+    max-width: 393px;
+}
+
+.mw-505 {
+    max-width: 505px;
+}
+
+.pb-138 {
+    padding-bottom: 138px;
+}
+
+.pl-20 {
+    padding-left: 20px;
+}
+
+.card1 {
+    border-radius: 14px;
+    background: #19161C;
+    box-shadow: 0px 58px 80px 0px rgba(0, 0, 0, 0.16);
+    padding: 49px 49px;
+}
+
+/* .border-bottom {
+    border-bottom: #888789 !important;
+} */
+/* .border-bottom: {
+    border-bottom: ;
+
+} */
+
+.mw-400 {
+    max-width: 400px;
 }
 
 :root {
@@ -45,9 +209,13 @@
     --fs-10xl: 70px;
     --fs-11xl: 94px;
     --fs-12xl: 101px;
-
+    --fs-14xl: 38px;
+    --fs-15xl: 35px;
     /* font-family */
     --ff-roboto: 'roboto', sans-serif;
+    --ff-helvetica-Bold: 'helvetica-Bold';
+    --ff-helvetica-normal: "helvetica-normal";
+
 
     /* colors */
     --bs-black: #0000;
@@ -55,6 +223,7 @@
     --col-grey: #848895;
     --col-blue: #618adc;
     --col-offwhite: #c4c4c4;
+    --bs-primary: #9945FF;
 }
 
 .ff-roboto {
@@ -79,6 +248,10 @@
 
 .col-offwhite {
     color: var(--col-offwhite);
+}
+
+.bs-primary {
+    color: var(--bs-primary);
 }
 
 .fs-11 {
@@ -129,6 +302,10 @@
     font-size: var(--fs-7xl);
 }
 
+.fs-38 {
+    font-size: var(--fs-14xl);
+}
+
 .fs-39 {
     font-size: var(--fs-8xl);
 }
@@ -147,6 +324,10 @@
 
 .fs-101 {
     font-size: var(--fs-12xl);
+}
+
+.fs-35 {
+    font-size: var(--fs-15xl);
 }
 
 .lh-160 {
@@ -193,6 +374,10 @@
     line-height: 105%;
 }
 
+.lh-116 {
+    line-height: 116%;
+}
+
 .lh-151 {
     line-height: 151.667%;
 }
@@ -205,12 +390,153 @@
     line-height: 110.526%;
 }
 
+.lh-140 {
+    line-height: 140%;
+}
+
 .lh-102 {
     line-height: 102.128%;
 }
 
+.lh-163 {
+    line-height: 163%;
+}
 
-/* .box {
+.lh-113 {
+    line-height: 113%;
+}
+
+.lh-136 {
+    line-height: 136%;
+}
+
+.lh-107 {
+    line-height: 107%;
+}
+
+.ellipse1 {
+    position: absolute;
+    bottom: 0;
+    display: none;
+    transition: all 300px linear;
+}
+
+.email {
+    color: #848895;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    border: none;
+    /* 133.333% */
+    /* border-radius: 800px; */
+    background: #0A0A0A;
+}
+
+.cards:hover .ellipse1 {
+    display: block;
+}
+
+.form {
+    padding: 7px 10px 7px 10px;
+    border-radius: 800px;
+    gap: 216px;
+    background-color: #0A0A0A;
+
+}
+
+
+.helvetica-Bold {
+    font-family: var(--ff-helvetica-Bold);
+}
+
+.helvetica-normal {
+    font-family: var(--ff-helvetica-normal);
+}
+
+.sign-up-btn {
+    border-radius: 800px;
+    border: 1px solid #000;
+    background: #14F195;
+    padding: 9px 21px;
+    width: 47%;
+}
+
+.mr-30 {
+    margin-right: 30px;
+}
+
+.mw-399 {
+    max-width: 399px;
+}
+
+.card-btn {
+    border-radius: 24px;
+    border: 1px solid #FFF;
+    padding: 12px 45px;
+    height: 100%;
+}
+
+.footer-bg {
+    background-color: #000508;
+}
+
+ul {
+    padding-left: 0;
+}
+
+.w-50 {
+    width: 50% !important;
+}
+/* 
+@media (min-width:400px) {
+    .fs-
+} 
+@media (min-width:400px) {
+    --fs-11xl: 94px;
+} */
+
+@media (min-width:500px) {
+    .card1 {
+        margin-bottom: 10px;
+    }
+
+    .w-sm-73 {
+        width: 73% !important;
+    }
+
+    .sign-up-btn {
+        width: 24%;
+    }
+}
+
+@media (min-width:768px) {
+    .w-md-75 {
+        width: 75% !important;
+    }
+
+    .sign-up-btn {
+        border-radius: 800px;
+        border: 1px solid #000;
+        background: #14F195;
+        padding: 9px 21px;
+        width: 24%;
+    }
+
+    /* .box {
     font-family: 'Helvetica-Bold';
     font-weight: 800;
 } */
+}
+
+@media (min-width:992px) {
+    .sign-up-btn {
+        width: 28%;
+    }
+
+    .w-lg-70 {
+        width: 70% !important;
+    }
+}
