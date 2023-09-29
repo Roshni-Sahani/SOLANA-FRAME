@@ -1,0 +1,428 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/style2.css">
+</head>
+
+<body>
+    <section class="min-vh-100 d-flex flex-column">
+        <nav class="nav-bg z-0">
+            <div class="container">
+                <div class="d-flex justify-content-center align-items-center text-align-center py-1">
+                    <p class=" ff-roboto fs-17 fw-normal lh-160">Breakpoint 2023 - New City. New Vibes - Get Early
+                        Access -></p>
+                </div>
+            </div>
+        </nav>
+        <nav class="py-3 bg-nav1">
+            <div class="container">
+                <div class="d-flex justify-content-between">
+                    <a href=""><img src="./assets/images/png/logo.png" alt="logo"></a>
+                    <div class="d-flex align-items-center gap-4 mobile_view justify-content-center" id="navbar">
+                        <ul class="d-flex align-items-center">
+                            <li><a href="#learn" onclick="openNav()"
+                                    class=" mb-0 col-grey ff-helvi fs-17 fw-normal lh-160">Learn</a></li>
+                            <li class="dropdown">
+                                <span class="dropbtn cursor-pointer"><svg width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_1479_1207)">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M17.2931 8.29308C17.3853 8.19757 17.4957 8.12139 17.6177 8.06898C17.7397 8.01657 17.8709 7.98898 18.0037 7.98783C18.1365 7.98668 18.2681 8.01198 18.391 8.06226C18.5139 8.11254 18.6256 8.18679 18.7195 8.28069C18.8134 8.37458 18.8876 8.48623 18.9379 8.60913C18.9882 8.73202 19.0135 8.8637 19.0123 8.99648C19.0112 9.12926 18.9836 9.26048 18.9312 9.38249C18.8788 9.50449 18.8026 9.61483 18.7071 9.70708L12.7071 15.7071C12.5248 15.8893 12.2793 15.9942 12.0216 15.9998C11.7639 16.0054 11.514 15.9113 11.3241 15.7371L5.32407 10.2371C5.12861 10.0578 5.01237 9.8082 5.00093 9.54321C4.99527 9.41201 5.0155 9.28097 5.06048 9.15758C5.10546 9.03419 5.1743 8.92087 5.26307 8.82408C5.35185 8.7273 5.45881 8.64895 5.57787 8.5935C5.69692 8.53806 5.82573 8.5066 5.95694 8.50094C6.22193 8.4895 6.48061 8.58379 6.67607 8.76308L11.9701 13.6161L17.2931 8.29308Z"
+                                                fill="#848895" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_1479_1207">
+                                                <rect width="24" height="24" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </span>
+                                <div class="dropdown-content">
+                                    <a href="#">Item 1</a>
+                                    <a href="#">Item 2</a>
+                                    <a href="#">Item 3</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="d-flex align-items-center">
+                            <li><a href="#build" onclick="openNav()"
+                                    class=" mb-0 col-grey ff-helvi fs-17 fw-normal lh-160">Build</a></li>
+                            <div class="dropdown">
+                                <span class="dropbtn cursor-pointer"><svg width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_1479_1207)">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M17.2931 8.29308C17.3853 8.19757 17.4957 8.12139 17.6177 8.06898C17.7397 8.01657 17.8709 7.98898 18.0037 7.98783C18.1365 7.98668 18.2681 8.01198 18.391 8.06226C18.5139 8.11254 18.6256 8.18679 18.7195 8.28069C18.8134 8.37458 18.8876 8.48623 18.9379 8.60913C18.9882 8.73202 19.0135 8.8637 19.0123 8.99648C19.0112 9.12926 18.9836 9.26048 18.9312 9.38249C18.8788 9.50449 18.8026 9.61483 18.7071 9.70708L12.7071 15.7071C12.5248 15.8893 12.2793 15.9942 12.0216 15.9998C11.7639 16.0054 11.514 15.9113 11.3241 15.7371L5.32407 10.2371C5.12861 10.0578 5.01237 9.8082 5.00093 9.54321C4.99527 9.41201 5.0155 9.28097 5.06048 9.15758C5.10546 9.03419 5.1743 8.92087 5.26307 8.82408C5.35185 8.7273 5.45881 8.64895 5.57787 8.5935C5.69692 8.53806 5.82573 8.5066 5.95694 8.50094C6.22193 8.4895 6.48061 8.58379 6.67607 8.76308L11.9701 13.6161L17.2931 8.29308Z"
+                                                fill="#848895" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_1479_1207">
+                                                <rect width="24" height="24" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </span>
+                                <div class="dropdown-content">
+                                    <a href="#">Item 1</a>
+                                    <a href="#">Item 2</a>
+                                    <a href="#">Item 3</a>
+                                </div>
+                            </div>
+                        </ul>
+                        <ul class="d-flex align-items-center">
+                            <li><a href="#network" onclick="openNav()"
+                                    class=" mb-0 col-grey ff-helvi fs-17 fw-normal lh-160">Network</a></li>
+                            <li class="dropdown">
+                                <span class="dropbtn cursor-pointer"><svg width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_1479_1207)">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M17.2931 8.29308C17.3853 8.19757 17.4957 8.12139 17.6177 8.06898C17.7397 8.01657 17.8709 7.98898 18.0037 7.98783C18.1365 7.98668 18.2681 8.01198 18.391 8.06226C18.5139 8.11254 18.6256 8.18679 18.7195 8.28069C18.8134 8.37458 18.8876 8.48623 18.9379 8.60913C18.9882 8.73202 19.0135 8.8637 19.0123 8.99648C19.0112 9.12926 18.9836 9.26048 18.9312 9.38249C18.8788 9.50449 18.8026 9.61483 18.7071 9.70708L12.7071 15.7071C12.5248 15.8893 12.2793 15.9942 12.0216 15.9998C11.7639 16.0054 11.514 15.9113 11.3241 15.7371L5.32407 10.2371C5.12861 10.0578 5.01237 9.8082 5.00093 9.54321C4.99527 9.41201 5.0155 9.28097 5.06048 9.15758C5.10546 9.03419 5.1743 8.92087 5.26307 8.82408C5.35185 8.7273 5.45881 8.64895 5.57787 8.5935C5.69692 8.53806 5.82573 8.5066 5.95694 8.50094C6.22193 8.4895 6.48061 8.58379 6.67607 8.76308L11.9701 13.6161L17.2931 8.29308Z"
+                                                fill="#848895" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_1479_1207">
+                                                <rect width="24" height="24" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </span>
+                                <div class="dropdown-content">
+                                    <a href="#">Item 1</a>
+                                    <a href="#">Item 2</a>
+                                    <a href="#">Item 3</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="d-flex align-items-center">
+                            <li><a href="#community" onclick="openNav()"
+                                    class=" mb-0 col-grey ff-helvi fs-17 fw-normal lh-160">Community</a></li>
+                            <div class="dropdown">
+                                <span class="dropbtn cursor-pointer"><svg width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_1479_1207)">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M17.2931 8.29308C17.3853 8.19757 17.4957 8.12139 17.6177 8.06898C17.7397 8.01657 17.8709 7.98898 18.0037 7.98783C18.1365 7.98668 18.2681 8.01198 18.391 8.06226C18.5139 8.11254 18.6256 8.18679 18.7195 8.28069C18.8134 8.37458 18.8876 8.48623 18.9379 8.60913C18.9882 8.73202 19.0135 8.8637 19.0123 8.99648C19.0112 9.12926 18.9836 9.26048 18.9312 9.38249C18.8788 9.50449 18.8026 9.61483 18.7071 9.70708L12.7071 15.7071C12.5248 15.8893 12.2793 15.9942 12.0216 15.9998C11.7639 16.0054 11.514 15.9113 11.3241 15.7371L5.32407 10.2371C5.12861 10.0578 5.01237 9.8082 5.00093 9.54321C4.99527 9.41201 5.0155 9.28097 5.06048 9.15758C5.10546 9.03419 5.1743 8.92087 5.26307 8.82408C5.35185 8.7273 5.45881 8.64895 5.57787 8.5935C5.69692 8.53806 5.82573 8.5066 5.95694 8.50094C6.22193 8.4895 6.48061 8.58379 6.67607 8.76308L11.9701 13.6161L17.2931 8.29308Z"
+                                                fill="#848895" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_1479_1207">
+                                                <rect width="24" height="24" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </span>
+
+                                <div class="dropdown-content">
+                                    <a href="#">Item 1</a>
+                                    <a href="#">Item 2</a>
+                                    <a href="#">Item 3</a>
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+                    <div id="menubtn-icon" onclick="openNav()" class="d-lg-none z-3 pe-2 pt-2">
+                        <div class="line1"></div>
+                        <div class="line2 my-2"></div>
+                        <div class="line3"></div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <section
+            class="flex-grow-1 d-flex justify-content-center align-items-center position-relative overflow- hidden">
+            <div class="container">
+                <div class="d-flex justify-content-center align-items-center flex-column">
+                    <p class="bs-white ff-helvi fs-70 fw-normal lh-108 ls-68 text-nowrap">Powerful for
+                        developers.</p>
+                    <p class="bs-white ff-helvi fs-68 fw-normal lh-111 ls-68 pb-1 text-nowrap">Fast for
+                        everyone.</p>
+                    <p class="bs-white ff-helvi fw-normal fs-21 lh-130 pt-4 mw-589 text-align-center">Bring blockchain
+                        to the
+                        people. Solana supports experiences for power users, new consumers, and everyone in
+                        between.</p>
+                    <div class="d-flex pt-4">
+                        <button class="start-btn bs-white fs-15 fw-normal ff-roboto lh-133">Start
+                            building</button>
+                        <button class="read-btn ml-15 bs-white ff-roboto fs-15 fw-normal lh-133">Read
+                            docs</button>
+                    </div>
+                </div>
+            </div>
+            <div class="pos-absolute">
+                <img src="./assets/images/png/side-img1.png" alt="side-img1" class="w-100">
+            </div>
+            <div class="pos-absolute1">
+                <img src="./assets/images/png/side-img2.png" alt="side-img2" class="w-100">
+            </div>
+        </section>
+    </section>
+    <section>
+        <div class="container overflow-hidden">
+            <div class="d-flex justify-content-center align-items-center flex-column">
+                <p class="col-blue ff-helvi fs-15 fw-normal lh-112 ls-8">Powering tools and integrations from
+                    companies all around the world</p>
+                <div class=" slider2 pt-4 pb-4 ">
+                    <img src="./assets/images/png/brave-img.png" alt="brave-img" class="pl-50">
+                    <img src="./assets/images/png/circle.png" alt="circle" class="pl-50">
+                    <img src="./assets/images/png/discord-img.png" alt="discord-img" class="pl-50">
+                    <img src="./assets/images/png/google.png" alt="google" class="pl-50">
+                    <img src="./assets/images/png/jump.png" alt="jump" class="pl-50">
+                    <img src="./assets/images/png/palgza-img.png" alt="palgza-img" class="pl-50">
+                    <img src="./assets/images/png/magic-img.png" alt="magic-img" class="pl-50">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-img pt-lg-5 pt-2 pb-3" id="build">
+        <div class="container">
+            <div class="row pt-5">
+                <div class="col-md-6 col-12 pt-lg-5 d-flex align-items-lg-start align-items-center flex-column">
+                    <p class="bs-white fw-normal lh-121 ff-helvi fs-39 text-align-center">Join a community</p>
+                    <p class="bs-white fw-normal lh-121 ff-helvi fs-39 text-align-center">of millions</p>
+                </div>
+                <div class="col-md-6 col-12 pb-5 d-flex align-items-lg-start align-items-center flex-column">
+                    <p class="ff-helvi fw-normal fs-101 lh-130 gradient-1 pt-5">11.5M+</p>
+                    <p class=" ff-roboto fs-16 col-offwhite ff-helvi lh-170 fw-normal">Active accounts</p>
+                    <p class="fs-106 gradient-2 fw-normal lh-124 ff-helvi pt-4">21.9M</p>
+                    <p class=" ff-roboto fs-16 col-offwhite ff-helvi lh-170 fw-normal">NFTs minted</p>
+                    <p class="fs-110 ff-helvi lh-121 fw-normal gradient-3 pt-4 word-break">$0.00025</p>
+                    <p class=" ff-roboto fs-16 col-offwhite ff-helvi lh-170 fw-normal">Average cost per
+                        transaction</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-12 pt-5 d-flex align-items-lg-start align-items-center flex-column">
+                    <p class="bs-white fs-40 fw-normal ff-helvi lh-115">Made for</p>
+                    <p class="bs-white fs-39 fw-normal ff-helvi lh-115">mass adoption .</p>
+                    <div class="d-flex">
+                        <div class="dot mt-1"></div>
+                        <p class="col-offwhite pl-4 fs-16 ff-roboto fw-normal lh-100">LIVE DATA</p>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-12">
+                    <div class="row">
+                        <div class="col-md-6 col-12 pt-lg-5 pt-2">
+                            <div class="card-1 mt-5 line-1">
+                                <p class="bs-white ff-helvi fs-28 fw-normal lh-118 pl-20">Fast</p>
+                                <p class="col-offwhite fs-17 ff-helvi fw-normal lh-160 pt-2 mw-250">Don’t keep your
+                                    users
+                                    waiting. Solana has block times of 400 milliseconds — and as hardware gets faster,
+                                    so will the
+                                    network.</p>
+                                <div class="d-flex pt-4">
+                                    <div class="dot mt-1"></div>
+                                    <p class="bs-white fs-28 fw-normal ff-helvi pl-4 lh-100">3,969</p>
+                                </div>
+                                <p class="col-offwhite ff-roboto fs-16 fw-normal lh-170 pt-2 text-nowrap">TRANSACTIONS
+                                    PER SECOND</p>
+                            </div>
+                            <div class="card-1 mt-3 line-2">
+                                <p class="bs-white ff-helvi fs-28 fw-normal lh-118 pl-20">Scalable</p>
+                                <p class="col-offwhite fs-18 ff-helvi fw-normal lh-160 pt-2 mw-250">Get big, quick.
+                                    Solana is made to handle thousands of transactions per second, and fees for both
+                                    developers and users
+                                    remain less than $0.01.</p>
+                                <div class="d-flex pt-4">
+                                    <div class="dot mt-1"></div>
+                                    <p class="bs-white fs-28 fw-normal ff-helvi pl-4 lh-100">163,077,581,394</p>
+                                </div>
+                                <p class="col-offwhite ff-roboto fs-16 fw-normal lh-170 pt-2 text-nowrap mw-270">
+                                    TOTAL TRANSACTIONS</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12  pt-3">
+                            <div class="card-1 line-3">
+                                <p class="bs-white ff-helvi fs-28 fw-normal lh-118 pl-20">Decentralized</p>
+                                <p class="col-offwhite fs-18 ff-helvi fw-normal lh-160 pt-2 mw-250">The Solana network
+                                    is validated by thousands of nodes that operate independently of each other,
+                                    ensuring your data
+                                    remains secure and censorship resistant.</p>
+                                <div class="d-flex pt-4">
+                                    <div class="dot mt-1"></div>
+                                    <p class="bs-white fs-28 fw-normal ff-helvi pl-4 lh-100">1,675</p>
+                                </div>
+                                <p class="col-offwhite ff-roboto fs-16 fw-normal lh-170 pt-2 text-nowrap mw-270">
+                                    VALIDATOR NODES</p>
+                            </div>
+                            <div class="card-1 mb-4 mt-1 line-4">
+                                <p class="bs-white ff-helvi fs-28 fw-normal lh-118 pl-20">Energy Efficient</p>
+                                <p class="col-offwhite fs-18 ff-helvi fw-normal lh-160 pt-2 mw-250">Solana’s proof of
+                                    stake network and other innovations minimize its impact on the <span
+                                        class="underline">environment.</span> Each
+                                    Solana transaction
+                                    uses about the same energy as a few Google searches.</p>
+                                <p class="bs-white fs-28 fw-normal ff-helvi pl-4 lh-100 pt-4">0%</p>
+                                <p class="col-offwhite ff-roboto fs-16 fw-normal lh-170 pt-2 text-nowrap mw-270">
+                                    NET CARBON IMPACT</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="pt-lg-5 pt-2" id="network">
+        <div class="container">
+            <div class="d-md-flex align-items-center justify-content-md-between justify-content-center pt-lg-5 pt-2">
+                <div class="d-flex justify-content-center align-items-center">
+                    <p class="ff-helvi bs-white fs-39 fw-normal lh-118">Build for growth.</p>
+                </div>
+                <div class="d-flex gap-3 justify-content-center flex-wrap">
+                    <ul class="box-1">
+                        <li class="bs-white ff-helvi fw-normal fs-15 lh-182">NFTs</li>
+                    </ul>
+                    <ul class="box-1">
+                        <li class="bs-white ff-helvi fw-normal fs-15 lh-182">DeFi</li>
+                    </ul>
+                    <ul class="box-1">
+                        <li class="bs-white ff-helvi fw-normal fs-15 lh-182">Payments</li>
+                    </ul>
+                    <ul class="box-1">
+                        <li class="bs-white ff-helvi fw-normal fs-15 lh-182">Gaming</li>
+                    </ul>
+                    <ul class="box-1">
+                        <li class="bs-white ff-helvi fw-normal fs-15 lh-182">DAOs</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row bg-col d-flex align-items-center mb-3">
+                <div class="col-lg-6 col-12 pb-lg-3">
+                    <img src="./assets/images/png/men-img.png" alt="men-img" class="w-100">
+                </div>
+                <div class="col-lg-6 col-12 pt-lg-3">
+                    <img src="./assets/images/png/anybody.png" alt="anybody">
+                    <p class="ff-helvi fs-21 fw-normal bs-white lh-130 mw-439 pt-3">It’s time to bridge the digital and
+                        physical. Anybodies helps established brands like Toys’R’Us
+                        connect real-life places
+                        and products with NFTs.</p>
+                    <p class="col-blue ff-helvi fs-20 fw-normal lh-133 pt-3">Learn more about NFTs <span
+                            class="fs-21">on Solana</span></p>
+                </div>
+            </div>
+            <div class="row bg-col d-flex justify-content-center align-items-center py-3 mb-5">
+                <div class="col-md-3 col-6 d-flex justify-content-center">
+                    <img src="./assets/images/png/clay.png" alt="clay">
+                </div>
+                <div class="col-md-3 col-6 d-flex justify-content-center">
+                    <img src="./assets/images/png/clay-2.png" alt="clay-2">
+                </div>
+                <div class="col-md-3 col-6 d-flex justify-content-center">
+                    <img src="./assets/images/png/cartoon.png" alt="cartoon">
+                </div>
+                <div class="col-md-3 col-6 d-flex justify-content-center">
+                    <img src="./assets/images/png/okay.png" alt="okay">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="position-relative overflow-hidden" id="community">
+        <div class="container">
+            <p class="ff-helvi bs-white fs-39 fw-normal lh-118 pb-4 text-align-center">Join a thriving community.</p>
+        </div>
+        <div class="slider">
+            <div class="slider-card pl-20">
+                <div class="s-box-1">
+                    <p class="ff-helvi col-blue fs-37 fw-normal lh-121">11,000</p>
+                    <p class="col-gr ff-helvi fs-12 fw-normal lh-124 text-nowrap pt-2">SOLANA HACKER HOUSE PARTICIPANTS
+                    </p>
+                </div>
+                <div class="pt-3">
+                    <img src="./assets/images/png/conversation.png" alt="conversation">
+                </div>
+            </div>
+            <div class="slider-card pl-20">
+                <img src="./assets/images/png/people.png" alt="people">
+            </div>
+            <div class="slider-card pl-20">
+                <img src="./assets/images/png/project.png" alt="project">
+                <div class="s-box-1 mt-3">
+                    <p class="col-green ff-helvi fs-40  fw-normal lh-110">48,000</p>
+                    <p class="mw-195 ff-helvi col-gr fw-normal lh-121 text-align-center">DEVELOPERD BUILDING DURING
+                        SOLANA HACKATHONS</p>
+                </div>
+            </div>
+            <div class="slider-card pl-20">
+                <img src="./assets/images/png/singing-girl.png" alt="singing-girl">
+            </div>
+            <div class="slider-card pl-20">
+                <div class="s-box-1">
+                    <p class="ff-helvi col-blue fs-37 fw-normal lh-121">11,000</p>
+                    <p class="col-gr ff-helvi fs-12 fw-normal lh-124 text-nowrap pt-2">SOLANA HACKER HOUSE PARTICIPANTS
+                    </p>
+                </div>
+                <div class="pt-3">
+                    <img src="./assets/images/png/carpenter.png" alt="carpenter">
+                </div>
+            </div>
+        </div>
+        <div class="container mt-4 mb-5 pb-5 ">
+            <div class="d-flex justify-content-center align-items-center pt-5 flex-column">
+                <p class="fs-39 ff-helvi bs-white fw-normal lh-121 pt-5 text-align-center mw-736">It's time to join the
+                    thousands of creators,
+                    artists, and developers using Solana.</p>
+                <button class="bs-white ff-roboto fs-15 fw-medium lh-133 mt-3 start-btn">START BUILDING</button>
+            </div>
+        </div>
+        <div class="posi-absolute">
+            <img src="./assets/images/png/bg-img-2.png" alt="bg-img-2">
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $('.slider').slick({
+            dots: false,
+            infine: true,
+            centerMode: true,
+            variableWidth: true,
+            autoplay: true,
+            autoplaySpeed: 0,
+            speed: 1000,
+            pauseOnHover: false,
+            cssEase: 'linear',
+            prevArrow: false,
+            nextArrow: false,
+
+        });
+    </script>
+    <script>
+        $('.slider2').slick({
+            dots: false,
+            infine: true,
+            centerMode: true,
+            variableWidth: true,
+            autoplay: true,
+            autoplaySpeed: 0,
+            speed: 1000,
+            pauseOnHover: false,
+            cssEase: 'linear',
+            prevArrow: false,
+            nextArrow: false,
+
+        });
+    </script>
+    <script src="./assets/js/doc.js"></script>
+</body>
+
+</html>
