@@ -4,6 +4,7 @@
     font-family: 'Helvetica-Bold';
     src: url("../fonts/helvetica-255-cufonfonts/Helvetica-Bold.ttf");
 }
+
 @font-face {
     font-family: 'helvetica-compressed';
     src: url("../fonts/helvetica-compressed-5871d4b6903a");
@@ -13,6 +14,7 @@
     font-family: 'helvetica-light';
     src: url("../fonts/helvetica-light-587ebe5a59211.ttf");
 }
+
 @font-face {
     font-family: 'helvetica-rounded-bold';
     src: url("../helvetica-rounded-bold-5871d05ead8de.otf");
@@ -45,7 +47,9 @@
     --fs-10xl: 70px;
     --fs-11xl: 94px;
     --fs-12xl: 101px;
-
+    --fs-13xl: 68px;
+    --fs-15xl: 106px;
+    --fs-16xl:110px;
     /* font-family */
     --ff-roboto: 'roboto', sans-serif;
 
@@ -93,6 +97,10 @@
     font-size: var(--fs-md);
 }
 
+.fs-106 {
+    font-size: 106px;
+}
+
 .fs-16 {
     font-size: var(--fs-lg);
 }
@@ -121,6 +129,10 @@
     font-size: var(--fs-5xl);
 }
 
+.fs-68 {
+    font-size: var(--fs-13xl);
+}
+
 .fs-36 {
     font-size: var(--fs-6xl);
 }
@@ -128,11 +140,15 @@
 .fs-37 {
     font-size: var(--fs-7xl);
 }
-
+.fs-106{
+    font-size: var(--fs-15xl);
+}
 .fs-39 {
     font-size: var(--fs-8xl);
 }
-
+.fs-110{
+    font-size: var(--fs-16xl);
+}
 .fs-40 {
     font-size: var(--fs-9xl);
 }
@@ -209,8 +225,7 @@
     line-height: 102.128%;
 }
 
+.lh-111 {
+    line-height: 111.176%;
+}
 
-/* .box {
-    font-family: 'Helvetica-Bold';
-    font-weight: 800;
-} */
