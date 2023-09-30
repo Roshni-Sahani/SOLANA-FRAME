@@ -247,6 +247,13 @@ ul {
     width: 50% !important;
 }
 
+.latest-btn {
+    border-radius: 24px;
+    border: 1px solid #FFF;
+    background: #000;
+    padding: 4px 40px;
+}
+
 /* ======================================================= */
 /* dropdown */
 
